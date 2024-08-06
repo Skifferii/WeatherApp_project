@@ -1,6 +1,6 @@
 import axios from "axios";
 import { createAppSlice } from "../../createAppSlice";
-import { RandomJokesSliceState } from "./types";
+import type { RandomJokesSliceState } from "./types";
 
 const randomJokesInitialState: RandomJokesSliceState = {
   data: [],
@@ -22,9 +22,9 @@ export const randomJokesSlice = createAppSlice({
         const result = await axios.get('https://official-joke-api.appspot.com/random_joke')
         //3. В случае успешного завершения запроса, возвращаем полученные данные, для того, чтобы получить их в обработчике ()агдашддув
         return result.data
-      } catch (error) {
+      } catch (error: any) {
         //4. В случае ошибки, отправляем её в обработчик rejected с помощью метода rejectWithValue из thunkApi
-        thunkApi.rejectWithValue(error)
+        thunkApi.rejectWithValue(error.response.data)
       }
     }, {
       //5. Обрабатываем событие ожидания ответа от сервера

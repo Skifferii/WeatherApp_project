@@ -1,14 +1,7 @@
-import { SpinnerWrapper } from "./styles";
+import { SpinnerComponent } from "./styles";
 
-
-
-
-  const Spinner = () => {
-  return (
-    <SpinnerWrapper>
-      <div className="spinner"></div>
-    </SpinnerWrapper>
-  );
-};
+function Spinner (){
+ return <SpinnerComponent></SpinnerComponent>
+}
 
 export default Spinner;

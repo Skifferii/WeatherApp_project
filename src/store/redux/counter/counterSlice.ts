@@ -23,9 +23,6 @@ export const counterSlice = createAppSlice({
     count: (state: CounterStateSlice) => state.count
   }
 })
-
-console.log(counterSlice)
-
 //7. Экспорт экшен и селекторов для того, чтобы можно было воспользоваться ими в компонентах приложения
 export const counterSliceActions = counterSlice.actions
 export const counterSliceSelectors = counterSlice.selectors

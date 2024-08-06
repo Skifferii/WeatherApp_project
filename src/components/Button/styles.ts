@@ -5,13 +5,14 @@ interface StyledButtonProps {
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
+  margin-top: 10px;
   width: 100%;
-  height: fit-content;
+  height: 70px;
   outline: none;
-  border: none;
-  padding: 20px;
+  border: 10p;
+  padding: 10px;
   /* background: #1f27f5; */
-  background: ${({ disabled }) => disabled ? "grey" : '#1f27f5'};
+  background: ${({ disabled }) => disabled ? '#AEAEAE' : '#565656'};
   border-radius: 4px;
   color: white;
   font-size: 16px;

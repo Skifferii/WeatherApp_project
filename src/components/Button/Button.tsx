@@ -1,5 +1,5 @@
 import { StyledButton } from './styles'
-import { ButtonProps } from "./types";
+import type { ButtonProps } from "./types";
 
 function Button({ name, type = "button", onClick, disabled = false }: ButtonProps) {
   return (
