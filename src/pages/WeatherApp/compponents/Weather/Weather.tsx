@@ -6,6 +6,7 @@ import Button from "../../../../components/Button/Button";
 import Input from "../../../../components/Input/Input";
 import type { WeatherProps, WeatherErrorProps } from "./types";
 
+
 function Weather() {
   const [weatherData, setWeatherData] = useState<WeatherProps | null>(null);
   const [weatherError, setWeatherError] = useState<WeatherErrorProps | null>(
@@ -95,3 +96,4 @@ function Weather() {
 }
 
 export default Weather;
+

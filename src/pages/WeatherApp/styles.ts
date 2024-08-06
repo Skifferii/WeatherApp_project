@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export const MenuPage = styled.div`
  display: flex;
- flex-direction: column;
+ flex-direction: column-reverse;
  justify-content: center;
  gap: 30px;
  flex: 1;
